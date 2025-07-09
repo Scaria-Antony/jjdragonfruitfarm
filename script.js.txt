@@ -1,0 +1,75 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const contentSections = document.querySelectorAll('.content-section');
+
+    // Function to show a specific section
+    function showSection(sectionId) {
+        contentSections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Function to activate the corresponding navigation link
+    function activateNavLink(sectionId) {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-section') === sectionId) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Event listeners for navigation links
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor link behavior
+            const sectionId = link.getAttribute('data-section');
+            showSection(sectionId);
+            activateNavLink(sectionId);
+
+            // Update URL hash without reloading
+            history.pushState(null, '', `#${sectionId.replace('-section', '')}`);
+        });
+    });
+
+    // Handle initial load based on URL hash
+    const initialHash = window.location.hash.substring(1); // Remove '#'
+    const initialSectionId = initialHash ? `${initialHash}-section` : 'home-section';
+
+    if (document.getElementById(initialSectionId)) {
+        showSection(initialSectionId);
+        activateNavLink(initialSectionId);
+    } else {
+        // Default to home if hash is invalid or not present
+        showSection('home-section');
+        activateNavLink('home-section');
+    }
+
+    // Handle back/forward browser buttons
+    window.addEventListener('popstate', () => {
+        const currentHash = window.location.hash.substring(1);
+        const currentSectionId = currentHash ? `${currentHash}-section` : 'home-section';
+        if (document.getElementById(currentSectionId)) {
+            showSection(currentSectionId);
+            activateNavLink(currentSectionId);
+        } else {
+            showSection('home-section');
+            activateNavLink('home-section');
+        }
+    });
+
+    // Smooth scroll for the "Explore Our Products" button on the home page
+    const exploreButton = document.querySelector('.hero .button');
+    if (exploreButton) {
+        exploreButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetSectionId = exploreButton.getAttribute('data-section');
+            showSection(targetSectionId);
+            activateNavLink(targetSectionId);
+            history.pushState(null, '', `#${targetSectionId.replace('-section', '')}`);
+            // Optional: Smooth scroll to the top of the products section
+            document.getElementById(targetSectionId).scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+});

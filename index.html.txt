@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dragon Fruit Farm - Thottapuzhassery, Kerala</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png"> </head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">🐉 Your Dragon Fruit Farm</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-section="home-section">Home</a></li>
+                    <li><a href="#products" class="nav-link" data-section="products-section">Products</a></li>
+                    <li><a href="#farming-services" class="nav-link" data-section="farming-services-section">Farming Services</a></li>
+                    <li><a href="#gallery" class="nav-link" data-section="gallery-section">Gallery</a></li>
+                    <li><a href="#youtube" class="nav-link" data-section="youtube-section">YouTube</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact-section">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home-section" class="content-section active">
+            <div class="hero">
+                <img src="images/dragon-fruit-banner.jpg" alt="Beautiful Dragon Fruit Farm" class="hero-image">
+                <div class="hero-text">
+                    <h2>Welcome to Your Dragon Fruit Farm!</h2>
+                    <p>Nestled in the lush landscapes of Thottapuzhassery, Kerala, we are passionate cultivators of premium quality dragon fruits. Experience the freshness and vibrant taste directly from our farm.</p>
+                    <a href="#products" class="button" data-section="products-section">Explore Our Products</a>
+                </div>
+            </div>
+            <div class="about-us">
+                <h3>About Our Farm</h3>
+                <p>At Your Dragon Fruit Farm, we believe in sustainable farming practices that honor the rich soil of Kerala. Our commitment to organic methods ensures that every fruit is not only delicious but also healthy and pure. We cultivate various varieties of dragon fruit, each bursting with unique flavors and nutritional benefits.</p>
+                <p>Join us on a journey to discover the exotic world of dragon fruits, grown with love and care for you.</p>
+            </div>
+        </section>
+
+        <section id="products-section" class="content-section">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/product1.jpg" alt="Red Pitaya Dragon Fruit">
+                    <h3>Red Pitaya (Hylocereus undatus)</h3>
+                    <p>The most common and popular variety, known for its vibrant red skin and white flesh with tiny black seeds. Sweet and mildly tangy.</p>
+                    <p class="price">Available Seasonally | Contact for current pricing</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="Yellow Pitaya Dragon Fruit">
+                    <h3>Yellow Pitaya (Selenicereus megalanthus)</h3>
+                    <p>Distinctive yellow skin with white, often sweeter, flesh. Less common but highly prized for its intense sweetness.</p>
+                    <p class="price">Available Seasonally | Contact for current pricing</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Costa Rican Pitaya Dragon Fruit">
+                    <h3>Costa Rican Pitaya (Hylocereus costaricensis)</h3>
+                    <p>Dark red skin and vibrant red flesh. Offers a richer flavor profile than the white-fleshed variety, packed with antioxidants.</p>
+                    <p class="price">Available Seasonally | Contact for current pricing</p>
+                </div>
+                </div>
+            <p class="note">We offer fresh dragon fruits, saplings, and custom orders. Please contact us for bulk inquiries and availability.</p>
+        </section>
+
+        <section id="farming-services-section" class="content-section">
+            <h2>Farming Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Dragon Fruit Saplings</h3>
+                    <p>High-quality, disease-free saplings of various dragon fruit varieties ready for planting. Perfect for new growers and farm expansions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Cultivation Consultation</h3>
+                    <p>Expert advice on setting up your dragon fruit farm, soil preparation, irrigation, pest management, and harvesting techniques tailored for Kerala's climate.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Farm Visits & Workshops</h3>
+                    <p>Scheduled guided tours of our farm and hands-on workshops for aspiring dragon fruit farmers. Learn best practices directly from our experienced team.</p>
+                </div>
+                </div>
+            <p class="note">Interested in starting your own dragon fruit cultivation? Reach out to us for personalized guidance.</p>
+        </section>
+
+        <section id="gallery-section" class="content-section">
+            <h2>Our Gallery</h2>
+            <div class="image-grid">
+                <img src="images/gallery1.jpg" alt="Dragon Fruit on Plant">
+                <img src="images/gallery2.jpg" alt="Harvested Dragon Fruits">
+                <img src="images/gallery3.jpg" alt="Dragon Fruit Farm View">
+                <img src="images/gallery4.jpg" alt="Dragon Fruit Flower">
+                <img src="images/gallery5.jpg" alt="Close-up of Dragon Fruit">
+                <img src="images/gallery6.jpg" alt="Packing Dragon Fruits">
+                </div>
+        </section>
+
+        <section id="youtube-section" class="content-section">
+            <h2>Our YouTube Videos</h2>
+            <div class="youtube-links">
+                <p>Check out our latest videos for farm tours, harvesting tips, and dragon fruit recipes!</p>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID_1" target="_blank">Dragon Fruit Farm Tour - A Day in Thottapuzhassery</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID_2" target="_blank">How We Harvest Dragon Fruits | Tips & Tricks</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID_3" target="_blank">Benefits of Dragon Fruit & Simple Recipes</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID_4" target="_blank">Planting Dragon Fruit Saplings Guide</a></li>
+                    </ul>
+                <p class="note">Don't forget to like, share, and subscribe to our channel!</p>
+            </div>
+            </section>
+
+        <section id="contact-section" class="content-section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>We'd love to hear from you! Whether you have questions about our dragon fruits, farming services, or just want to say hello, feel free to reach out.</p>
+                <p><strong>Address:</strong> Your Dragon Fruit Farm, Thottapuzhassery, Kerala, India</p>
+                <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a> (Replace with your actual number)</p>
+                <p><strong>Email:</strong> <a href="mailto:info@yourdragonfruitfarm.com">info@yourdragonfruitfarm.com</a> (Replace with your actual email)</p>
+                <p><strong>Working Hours:</strong> Monday - Saturday, 9:00 AM - 5:00 PM IST</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.569931889417!2d76.54924261479363!3d10.15849887019808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07ebf0b8d52317%3A0xc3f73318b7b2b32!2sThottapuzhassery%2C%20Kerala%20683584!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Dragon Fruit Farm. All rights reserved. | Located in Thottapuzhassery, Kerala, India.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
